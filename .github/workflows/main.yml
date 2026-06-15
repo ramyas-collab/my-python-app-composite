@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup app         # ← calling the composite action as a step
+      - name: Setup app         
         uses: ./.github/actions/setup-python-app
         with:
           python-version: '3.11'
